@@ -5,8 +5,6 @@
 //  Created by Егор Бадмаев on 04.12.2022.
 //
 
-import Foundation
-
 /// An object that defines details about log's calling.
 struct Context {
     
@@ -21,6 +19,7 @@ struct Context {
     
     // MARK: - Init
     
+    /// Creates instance of this structure.
     init(file: String = #fileID,
          function: String = #function,
          line: Int = #line) {
