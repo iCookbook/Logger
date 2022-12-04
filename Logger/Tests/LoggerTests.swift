@@ -18,7 +18,8 @@ class LoggerTests: XCTestCase {
         
         XCTAssertEqual(handledLog,
             """
-            \(Logger.LogType.error.rawValue): "\(testMessage)"
+            \(Logger.LogType.error.rawValue): \(Date())
+            "\(testMessage)"
             """
         )
     }
@@ -28,14 +29,16 @@ class LoggerTests: XCTestCase {
         let testFile = "test file"
         let testFunction = "test function"
         let testLine = 10
+        let testContext = Context(file: testFile, function: testFunction, line: testLine)
         
         let handledLog = Logger.createLog(logType: .info, message: testMessage, shouldLogContext: true,
-                                          context: Context(file: testFile, function: testFunction, line: testLine))
+                                          context: testContext)
         
         XCTAssertEqual(handledLog,
             """
-            \(Logger.LogType.info.rawValue): "\(testMessage)"
-            In \(testFile): \(testFunction) method on line \(testLine)
+            \(Logger.LogType.info.rawValue): \(Date())
+            "\(testMessage)"
+            \(testContext.description)
             """
         )
     }
