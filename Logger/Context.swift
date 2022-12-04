@@ -8,15 +8,19 @@
 import Foundation
 
 struct Context {
+    
+    // MARK: - Private Properties
+    
+    /// The name of the file and module in which it appears.
     private let file: String
+    /// The name of the declaration in which it appears.
     private let function: String
+    /// The line number on which it appears.
     private let line: Int
     
-    var description: String {
-        return "\(extractFileName(from: file)): \(function): \(line)"
-    }
+    // MARK: - Init
     
-    init(file: String = #file,
+    init(file: String = #fileID,
          function: String = #function,
          line: Int = #line) {
         self.file = file
@@ -24,7 +28,8 @@ struct Context {
         self.line = line
     }
     
-    private func extractFileName(from path: String) -> String {
-        return path.components(separatedBy: "/").last ?? ""
+    /// Description of the log context.
+    var description: String {
+        return "In \(file): \(function) method on line \(line)"
     }
 }

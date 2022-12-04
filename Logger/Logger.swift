@@ -24,7 +24,7 @@ public enum Logger {
     ///   - message: log message.
     ///   - logType: log type.
     ///   - shouldLogContext: defines whether to log `Context` or not.
-    ///   - file: The path to the file in which it appears.
+    ///   - file: The name of the file and module in which it appears.
     ///   - function: The name of the declaration in which it appears.
     ///   - line: The line number on which it appears.
     ///
@@ -33,7 +33,7 @@ public enum Logger {
         _ message: @autoclosure () -> String,
         logType: LogType,
         shouldLogContext: Bool = true,
-        file: String = #file,
+        file: String = #fileID,
         function: String = #function,
         line: Int = #line
     ) {
@@ -63,7 +63,7 @@ public enum Logger {
         shouldLogContext: Bool,
         context: Context = Context()
     ) -> String {
-        var fullLog: [String] = [logType.rawValue, message()]
+        var fullLog: [String] = ["\(logType.rawValue): \"\(message())\""]
         if shouldLogContext {
             fullLog.append(context.description)
         }
