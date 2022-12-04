@@ -52,7 +52,7 @@ public enum Logger {
     ///   - message: log message.
     ///   - logType: log type.
     ///   - shouldLogContext: defines whether to log `Context` or not.
-    ///   - context: `Context` instance that contains details about log's calling.
+    ///   - context: contains details about log's calling.
     ///
     /// - Returns: string with all info.
     ///
