@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'Logger'
-  s.version          = '1.0.1'
+  s.version          = '1.1.0'
   s.summary          = 'Custom logger of the project'
   s.homepage         = 'https://github.com/htmlprogrammist/Logger'
   s.author           = { 'htmlprogrammist' => '60363270+htmlprogrammist@users.noreply.github.com' }
