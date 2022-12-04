@@ -12,6 +12,7 @@ class LoggerTests: XCTestCase {
     
     private let testMessage = "test message"
     
+    /// Tests logger's output for some `testMessage` without context.
     func testWithoutContext() throws {
         let handledLog = Logger.createLog(logType: .error, message: testMessage, shouldLogContext: false)
         
@@ -22,6 +23,7 @@ class LoggerTests: XCTestCase {
         )
     }
     
+    /// Tests logger's output for some `testMessage` with context.
     func testWithContext() throws {
         let testFile = "test file"
         let testFunction = "test function"

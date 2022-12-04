@@ -10,6 +10,10 @@ import XCTest
 
 class ContextTests: XCTestCase {
     
+    private let testFile = "test file"
+    private let testFunction = "test function"
+    private let testLine = 10
+    
     var context: Context!
     
     override func setUpWithError() throws {
@@ -18,9 +22,10 @@ class ContextTests: XCTestCase {
     override func tearDownWithError() throws {
     }
     
+    /// Tests context's `description` computed property.
     func testContextDescription() throws {
-        context = Context(file: "test file", function: "test function", line: 10)
+        context = Context(file: testFile, function: testFunction, line: testLine)
         
-        XCTAssertEqual(context.description, "test file: test function: 10")
+        XCTAssertEqual(context.description, "In \(testFile): \(testFunction) method on line \(testLine)")
     }
 }
