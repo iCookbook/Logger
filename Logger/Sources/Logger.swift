@@ -63,7 +63,7 @@ public enum Logger {
         shouldLogContext: Bool,
         context: Context = Context()
     ) -> String {
-        var fullLog: [String] = ["\(logType.rawValue): \"\(message())\""]
+        var fullLog: [String] = ["\(logType.rawValue): \(Date())", "\"\(message())\""]
         if shouldLogContext {
             fullLog.append(context.description)
         }
