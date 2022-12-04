@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// An object that defines details about log's calling.
 struct Context {
     
     // MARK: - Private Properties
