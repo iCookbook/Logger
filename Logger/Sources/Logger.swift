@@ -63,12 +63,12 @@ public enum Logger {
         shouldLogContext: Bool,
         context: Context = Context()
     ) -> String {
-        var fullLog: [String] = ["\(logType.rawValue): \(Date())", "\"\(message())\""]
-        if shouldLogContext {
-            fullLog.append(context.description)
-        }
+        var logs: [String] = ["\(logType.rawValue): \(Date())", "\"\(message())\""]
         
-        return fullLog.joined(separator: "\n")
+        if shouldLogContext {
+            logs.append(context.description)
+        }
+        return logs.joined(separator: "\n")
     }
     
     /// Prints message when debug mode is active.
