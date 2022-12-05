@@ -14,9 +14,9 @@ class LoggerTests: XCTestCase {
     
     /// Tests logger's output for some `testMessage` without context.
     func testWithoutContext() throws {
-        let handledLog = Logger.createLog(logType: .error, message: testMessage, shouldLogContext: false)
+        let createdLog = Logger.createLog(logType: .error, message: testMessage, shouldLogContext: false)
         
-        XCTAssertEqual(handledLog,
+        XCTAssertEqual(createdLog,
             """
             \(Logger.LogType.error.rawValue): \(Date())
             "\(testMessage)"
@@ -31,10 +31,10 @@ class LoggerTests: XCTestCase {
         let testLine = 10
         let testContext = Context(file: testFile, function: testFunction, line: testLine)
         
-        let handledLog = Logger.createLog(logType: .info, message: testMessage, shouldLogContext: true,
+        let createdLog = Logger.createLog(logType: .info, message: testMessage, shouldLogContext: true,
                                           context: testContext)
         
-        XCTAssertEqual(handledLog,
+        XCTAssertEqual(createdLog,
             """
             \(Logger.LogType.info.rawValue): \(Date())
             "\(testMessage)"

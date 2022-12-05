@@ -16,10 +16,8 @@ class ContextTests: XCTestCase {
     
     var context: Context!
     
-    override func setUpWithError() throws {
-    }
-    
     override func tearDownWithError() throws {
+        context = nil
     }
     
     /// Tests context's `description` computed property.
