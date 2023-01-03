@@ -24,7 +24,6 @@
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		6936EE3F0A44591321055B7B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		AB3DB2B509D91E78E474BB2A /* Pods-Logger_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Logger_Example.release.xcconfig"; path = "Target Support Files/Pods-Logger_Example/Pods-Logger_Example.release.xcconfig"; sourceTree = "<group>"; };
 		BB32792C3D00A6AC5E08FBA2 /* Pods-Logger_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Logger_Example.debug.xcconfig"; path = "Target Support Files/Pods-Logger_Example/Pods-Logger_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		EB3222918A516279A197D376 /* Logger.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Logger.podspec; path = ../Logger.podspec; sourceTree = "<group>"; };
@@ -99,7 +98,6 @@
 			children = (
 				EB3222918A516279A197D376 /* Logger.podspec */,
 				F250F1BDA2FD9AA89E4D123C /* README.md */,
-				6936EE3F0A44591321055B7B /* LICENSE */,
 			);
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
