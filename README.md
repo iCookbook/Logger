@@ -18,3 +18,7 @@ Logger.log("Some information's here.", logType: .info, shouldLogContext: false)
 And output would be like:
 
 <img width="877" alt="image" src="https://user-images.githubusercontent.com/60363270/205673967-192b170c-0851-495b-b4d6-aba04226fcee.png">
+
+---
+
+For more details, read [GitHub Wiki](https://github.com/iCookbook/Logger/wiki) documentation
