@@ -26,7 +26,7 @@
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		AB3DB2B509D91E78E474BB2A /* Pods-Logger_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Logger_Example.release.xcconfig"; path = "Target Support Files/Pods-Logger_Example/Pods-Logger_Example.release.xcconfig"; sourceTree = "<group>"; };
 		BB32792C3D00A6AC5E08FBA2 /* Pods-Logger_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Logger_Example.debug.xcconfig"; path = "Target Support Files/Pods-Logger_Example/Pods-Logger_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		EB3222918A516279A197D376 /* Logger.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Logger.podspec; path = ../Logger.podspec; sourceTree = "<group>"; };
+		EB3222918A516279A197D376 /* Logger.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Logger.podspec; path = ../Logger.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		F250F1BDA2FD9AA89E4D123C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
